@@ -152,8 +152,7 @@ GR01-D3.pdf
 
 - Daniel Llopis Conejo
 - Matías Nevado García
-MSc in Science in Neurotechnology\n
-Universidad Politécnica de Madrid
+MSc in Science in Neurotechnology (Universidad Politécnica de Madrid)
 
 
 
