@@ -56,3 +56,105 @@ Temporal voting and thresholding
 Serial command to Arduino
         ↓
 Robot movement + EMG confirmation
+```
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── D3_NPTS.pdf
+├── requirements.txt
+├── python/
+│   └── eeg_emg_robot_python.py
+├── arduino/
+│   └── GR01-D3/
+│       └── GR01-D3.ino
+├── models/
+│   └── GR01-D3_eeg_csp_model.pkl
+├── eeg_recordings/
+│   └── EEG CSV recordings
+└── eeg_plots/
+    └── Generated EEG plots and confusion matrices
+```
+
+## Hardware
+
+* BitBrain EEG acquisition system
+* EEG cap with electrodes placed over sensorimotor areas
+* EMG sensor connected to the forearm
+* Arduino-compatible controller
+* PhantomX Reactor 5-DOF robotic arm
+* Laptop or PC for Python-based processing
+
+## Software
+
+* Python 3
+* Arduino IDE
+* Lab Streaming Layer
+* NumPy
+* SciPy
+* Pandas
+* Matplotlib
+* Scikit-learn
+* MNE
+* PySerial
+* pylsl
+
+## How to Run
+
+1. Install Python dependencies
+
+```text
+pip install -r requirements.txt
+```
+
+2. Upload Arduino firmware
+
+Open the Arduino sketch:
+
+```text
+arduino/GR01-D3/GR01-D3.ino
+```
+
+Upload it to the Arduino-compatible controller connected to the PhantomX Reactor platform.
+
+3. Start EEG acquisition
+
+Start the BitBrain acquisition software and make sure the EEG stream is available through LSL.
+
+4. Run the Python control script
+
+```text
+python python/eeg_emg_robot_python.py
+```
+
+The script can either load a previously trained subject-specific model or record new EEG trials and retrain the classifiers.
+
+Generated Outputs
+
+The Python pipeline generates:
+
+* Raw EEG plots
+* Band-power visualizations
+* Confusion matrices
+* Recorded EEG CSV files
+* Trained model files
+
+## Report
+
+The full written report is available in:
+
+```text
+GR01-D3.pdf
+```
+## Authors
+
+Daniel Llopis Conejo
+Matías Nevado García
+
+MSc in Science in Neurotechnology
+Universidad Politécnica de Madrid
+
+
+
