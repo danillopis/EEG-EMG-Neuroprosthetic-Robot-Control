@@ -1,6 +1,4 @@
 # EEG-EMG-Neuroprosthetic-Robot-Control
-Hybrid EEG-EMG neuroprosthetic control system for real-time robotic arm operation using motor imagery classification, CSP, LDA/SVM, Arduino, and PhantomX Reactor.
-
 This repository contains the implementation of a hybrid EEG-EMG neuroprosthetic control system developed for Deliverable 3 of the Neuroprosthetics course in the MSc in Science in Neurotechnology at Universidad Politécnica de Madrid.
 
 The project integrates EEG-based motor imagery classification, EMG-based confirmation, machine learning, serial communication, and robotic actuation using a PhantomX Reactor 5-DOF robotic arm.
