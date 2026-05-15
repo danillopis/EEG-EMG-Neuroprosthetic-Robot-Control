@@ -150,10 +150,9 @@ GR01-D3.pdf
 ```
 ## Authors
 
-Daniel Llopis Conejo \n
-Matías Nevado García \n
-
-MSc in Science in Neurotechnology \n
+- Daniel Llopis Conejo
+- Matías Nevado García
+MSc in Science in Neurotechnology\n
 Universidad Politécnica de Madrid
 
 
